@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials"
 function App() {
 
   return (
-    <div className="flex flex-col gap-10 my-10">
+    <div className="flex flex-col gap-10 my-10 mx-1 md:mx-0">
       <div className="container">
         <Navbar/>
       </div>
