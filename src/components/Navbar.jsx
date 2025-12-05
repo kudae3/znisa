@@ -51,19 +51,19 @@ const Navbar = () => {
       
       {/* Logo */}
       <div className='w-[117px] h-11 flex items-center gap-3'>
-        <img className='w-11 h-11' src="/src/assets/logo.png" alt="" />
-        <h1 className='font-normal text-[24px] leading-[100%] text-white'>znisa</h1>
+        <img className='w-7 h-7 md:w-11 md:h-11' src="/src/assets/logo.png" alt="" />
+        <h1 className='font-normal text-[18px] md:text-[24px] leading-[100%] text-white'>znisa</h1>
       </div>
       
       {/* Routes Buttons */}
-      <div className='gradient-border-wrapper w-[80%] md:max-w-[418px] h-12 rounded-[290px] mx-auto md:mx-0 fixed top-18 md:top-10 left-1/2 -translate-x-1/2 z-50'>
+      <div className='gradient-border-wrapper w-[80%] md:max-w-[418px] h-10 md:h-12 rounded-[290px] mx-auto fixed top-13 md:top-10 left-1/2 -translate-x-1/2 z-50'>
         <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-2 md:gap-5 py-1.5 pl-1.5 pr-1.5 lg:pr-8 text-white'>
           {navItems.map((item) => (
             <a
               key={item.id}
               href={item.href}
               onClick={(e) => handleScrollClick(e, item.href)}
-              className={`${item.icon ? 'w-[52px]' : 'px-2 md:px-3'} h-9 rounded-[40px] flex justify-center items-center ${activeSection === item.section ? 'bg-[#292929]' : ''} ${item.label === 'Contact me' ? 'whitespace-nowrap' : ''} cursor-pointer hover:bg-[#292929] transition-colors`}
+              className={`${item.icon ? 'w-[52px]' : 'px-2 md:px-3'} h-8 md:h-9 rounded-[40px] flex justify-center items-center ${activeSection === item.section ? 'bg-[#292929]' : ''} ${item.label === 'Contact me' ? 'whitespace-nowrap' : ''} cursor-pointer hover:bg-[#292929] transition-colors`}
             >
               {item.icon ? item.icon : <p className='font-normal text-[10px] md:text-[16px] leading-[100%]'>{item.label}</p>}
             </a>
