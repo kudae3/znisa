@@ -15,7 +15,7 @@ const GradientButton = ({
         onClick={onClick}
       >
         {typeof children === 'string' ? (
-          <p className={`font-medium text-[16px] leading-[100%] ${textColor}`}>
+          <p className={`font-medium text-[12px] md:text-[16px] leading-[100%] ${textColor}`}>
             {children}
           </p>
         ) : (
