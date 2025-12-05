@@ -4,10 +4,10 @@ import GradientButton from '../assets/ui/GradientBtn'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-0'>
       
       {/* Logo */}
-      <div className='hidden w-[117px] h-11 md:flex items-center gap-3'>
+      <div className='w-[117px] h-11 flex items-center gap-3'>
         <img className='w-11 h-11' src="/src/assets/logo.png" alt="" />
         <h1 className='font-normal text-[24px] leading-[100%] text-white'>znisa</h1>
       </div>
