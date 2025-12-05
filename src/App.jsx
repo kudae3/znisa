@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Process from "./components/Process"
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div className="container">
         <Contact/>
+      </div>
+      <div className="container">
+        <Footer/>
       </div>
     </div>
   )

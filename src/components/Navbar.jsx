@@ -14,7 +14,7 @@ const Navbar = () => {
       
       {/* Routes Buttons */}
       <div className='gradient-border-wrapper w-[418px] h-12 rounded-[290px]'>
-        <div className='w-full h-full bg-[#101111] rounded-[290px] flex justify-between items-center gap-10 py-1.5 pl-1.5 pr-8 text-white'>
+        <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-10 py-1.5 pl-1.5 pr-8 text-white'>
           <div className='w-[52px] h-9 rounded-[40px] flex justify-center items-center bg-[#292929]'>
             <Home/>
           </div>
