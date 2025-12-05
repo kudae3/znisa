@@ -4,10 +4,10 @@ import GradientButton from '../assets/ui/GradientBtn'
 
 const Contact = () => {
   return (
-    <div className='text-white flex justify-between items-center mt-20'>
+    <div className='text-white flex justify-between items-center mt-5 md:mt-20'>
         
         <div>
-            <div className='flex gap-3 md:gap-[29px] items-center pb-5 md:pb-10'>
+            <div className='flex gap-3 md:gap-5 lg:gap-[29px] items-center pb-5 md:pb-10'>
                 <h2 className='font-normal text-[20px] md:text-[40px] leading-14'>Have idea about project?</h2>
                 <Twinkle/>
             </div>
