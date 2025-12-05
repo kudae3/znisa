@@ -1,5 +1,6 @@
 import Home from '../assets/icons/Home'
 import People from '../assets/icons/people'
+import GradientButton from '../assets/ui/GradientBtn'
 
 const Navbar = () => {
   return (
@@ -30,16 +31,10 @@ const Navbar = () => {
       
       {/* Buttons */}
       <div className='flex items-center gap-1'>
-        <div className='gradient-border-wrapper w-[103px] h-[52px] rounded-[40px]'>
-          <button className='gradient-bg w-full h-full rounded-[40px]'>
-            <p className='font-medium text-[16px] leading-[100%] text-[#000000]'>Hire Me</p>
-          </button>
-        </div>
-        <div className='gradient-border-wrapper w-[49px] h-[49px] rounded-full'>
-          <button className='gradient-bg w-full h-full flex justify-center items-center rounded-full'>
-            <People/>
-          </button>
-        </div>
+        <GradientButton width="w-[103px]" height="h-[52px]" rounded="rounded-[40px]">Hire Me</GradientButton>
+        <GradientButton width="w-[49px]" height="h-[49px]" rounded="rounded-full">
+          <People/>
+        </GradientButton>
       </div>
     </div>
   )
