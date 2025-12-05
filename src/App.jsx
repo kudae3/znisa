@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials"
 function App() {
 
   return (
-    <div className="flex flex-col gap-10 my-5 md:my-10 mx-1">
+    <div className="flex flex-col gap-10 my-5 md:my-10 mx-2 lg:mx-0">
       <div className="container">
         <Navbar/>
       </div>
@@ -27,7 +27,7 @@ function App() {
         <Projects/>
       </div>
       <div className="container">
-        {/* <Testimonials/> */}
+        <Testimonials/>
       </div>
       <div className="container">
         <Contact/>

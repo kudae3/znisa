@@ -8,7 +8,7 @@ const Contact = () => {
         
         <div>
             <div className='flex gap-3 md:gap-5 lg:gap-[29px] items-center pb-5 md:pb-10'>
-                <h2 className='font-normal text-[20px] md:text-[40px] leading-14'>Have idea about project?</h2>
+                <h2 className='font-normal text-[20px] md:text-[30px] lg:text-[40px] leading-14'>Have idea about project?</h2>
                 <Twinkle/>
             </div>
             <div className='flex flex-col gap-9'>
@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
         </div>
         
-        <div className='hidden md:block w-[392px] h-[392px]'>
+        <div className='hidden md:flex w-[392px] h-[392px]'>
             <img src="/src/assets/image.png" alt="" />
         </div>
     </div>

@@ -32,7 +32,7 @@ const Process = () => {
   return (
     <div className='text-white flex flex-col gap-10 mt-5 md:mt-20'>
         <div className='flex gap-3 md:gap-[29px] items-center pb-0 md:pb-10'>
-            <h2 className='font-normal text-[20px] md:text-[40px] leading-14'>My process to design</h2>
+            <h2 className='font-normal text-[20px] md:text-[30px] lg:text-[40px] leading-14'>My process to design</h2>
             <Twinkle/>
         </div>
         <div className='w-full max-w-[735px]'>
@@ -52,12 +52,12 @@ const Process = () => {
                         <div className='w-12 h-12 md:w-14 md:h-14'>
                           {step.icon}
                         </div>
-                        <p className='font-normal text-[14px] md:text-[22px] leading-[33px]'>{step.title}</p>
-                        <p className='text-[#FFFFFFCC] font-normal text-[12px] md:text-[19px] leading-7'>{step.description}</p>
+                        <p className='font-normal text-[14px] md:text-[18px] lg:text-[22px] leading-[33px]'>{step.title}</p>
+                        <p className='text-[#FFFFFFCC] font-normal text-[12px] md:text-[16px] lg:text-[19px] leading-7'>{step.description}</p>
                         {step.hasButton && (
                           <div className='gradient-border-wrapper w-fit md:w-[177px] h-fit md:h-[49px] rounded-[100px]'>
                               <button className='w-full h-full bg-[#101111] rounded-[100px] px-2 md:px-0 flex justify-center items-center text-white'>
-                                  <p className='font-normal text-[12px] md:text-[18px] leading-7'>See Examples</p>
+                                  <p className='font-normal text-[12px] md:text-[14px] lg:text-[18px] leading-7'>See Examples</p>
                               </button>
                           </div>
                         )}
