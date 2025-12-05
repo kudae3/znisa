@@ -31,7 +31,7 @@ const Process = () => {
 
   return (
     <div className='text-white flex flex-col gap-10 mt-20'>
-        <div className='flex gap-[29px] items-center pb-10'>
+        <div className='flex gap-3 md:gap-[29px] items-center pb-10'>
             <h2 className='font-normal text-[20px] md:text-[40px] leading-14'>My process to design</h2>
             <Twinkle/>
         </div>

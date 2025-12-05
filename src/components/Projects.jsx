@@ -22,20 +22,20 @@ const projectsData = [
 const Projects = () => {
   return (
     <div className='text-white flex flex-col gap-10 mt-20'>
-        <div className='flex gap-[29px] items-center pb-10'>
-            <h2 className='font-normal text-[40px] leading-14'>Some Featured projects</h2>
+        <div className='flex gap-3 md:gap-[29px] items-center pb-10'>
+            <h2 className='font-normal text-[20px] md:text-[40px] leading-14'>Some Featured projects</h2>
             <Twinkle/>
         </div>
 
         <div className='flex flex-col gap-10'>
           {projectsData.map((project) => (
-            <div key={project.id} className='py-[55px] px-5 flex justify-around items-center bg-[#151515]'>
-                <div className='w-[545px] h-[545px] gradient-bg'></div>
+            <div key={project.id} className='py-5  md:py-[55px] px-5 flex justify-around items-center bg-[#151515]'>
+                <div className='w-[120px] h-[120px] md:w-[545px] md:h-[545px] gradient-bg'></div>
                 <div className='flex flex-col gap-5'>
-                    <div className='w-[53px] h-[53px]'>
+                    <div className='w-[30px] h-[30px] md:w-[53px] md:h-[53px]'>
                         <img src={project.icon} alt={project.name} />
                     </div>
-                    <h2 className='font-bold text-[36px] leading-[22px]'>{project.name}</h2>
+                    <h2 className='font-bold text-[18px] md:text-[36px] leading-[18px] md:leading-[22px]'>{project.name}</h2>
                 </div>
             </div>
           ))}
