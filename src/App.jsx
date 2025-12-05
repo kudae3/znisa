@@ -14,22 +14,22 @@ function App() {
       <div className="container">
         <Navbar/>
       </div>
-      <div>
+      <div id="home">
         <div className="container">
           <Hero />
         </div>
         <Banner/>
       </div>
-      <div className="container">
+      <div id="about" className="container">
         <Process/>
       </div>
-      <div className="container">
+      <div id="projects" className="container">
         <Projects/>
       </div>
       <div className="container">
         <Testimonials/>
       </div>
-      <div className="container">
+      <div id="contact" className="container">
         <Contact/>
       </div>
       <div className="container">

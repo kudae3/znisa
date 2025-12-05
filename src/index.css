@@ -5,6 +5,10 @@
   --default-font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     @apply w-full max-w-[1090px] mx-auto;
 }
