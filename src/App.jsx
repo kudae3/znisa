@@ -16,7 +16,7 @@ function App() {
       </div>
       <div>
         <div className="container">
-          {/* <Hero /> */}
+          <Hero />
         </div>
         <Banner/>
       </div>

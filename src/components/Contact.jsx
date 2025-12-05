@@ -19,8 +19,8 @@ const Contact = () => {
             </div>
         </div>
         
-        <div className='hidden md:flex w-[392px] h-[392px]'>
-            <img src="/src/assets/image.png" alt="" />
+        <div className='hidden md:flex shrink-0 w-[392px] h-[392px]'>
+            <img className='' src="/src/assets/image.png" alt="" />
         </div>
     </div>
   )
