@@ -1,6 +1,7 @@
 import Banner from "./components/Banner"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Process from "./components/Process"
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
           <Hero />
         </div>
         <Banner/>
+      </div>
+      <div className="container">
+        <Process/>
       </div>
     </div>
   )
