@@ -1,5 +1,5 @@
 import Home from '../assets/icons/Home'
-import People from '../assets/icons/people'
+import People from '../assets/icons/People'
 import GradientButton from '../assets/ui/GradientBtn'
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
       
       {/* Routes Buttons */}
       <div className='gradient-border-wrapper w-full max-w-[418px] h-12 rounded-[290px] mx-auto md:mx-0'>
-        <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-10 py-1.5 pl-1.5 pr-8 text-white'>
+        <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-10 py-1.5 pl-1.5 pr-1.5 lg:pr-8 text-white'>
           <div className='w-[52px] h-9 rounded-[40px] flex justify-center items-center bg-[#292929]'>
             <Home/>
           </div>
