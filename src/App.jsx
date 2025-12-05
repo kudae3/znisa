@@ -1,9 +1,11 @@
+import Navbar from "./components/Navbar"
+
 function App() {
 
   return (
-    <>
-      <h1 className='text-green-500 font-bold text-xl p-10'>Hello World</h1>
-    </>
+    <div className="w-full max-w-[1090px] mx-auto">
+      <Navbar/>
+    </div>
   )
 }
 

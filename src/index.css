@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.gradient-border-wrapper {
+  background: linear-gradient(269.57deg, #7A87FB 0.72%, #FFD49C 99.22%);
+  padding: 1px;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #7A87FB 0%, #FFD49C 100%);
+}
