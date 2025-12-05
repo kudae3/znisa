@@ -2,8 +2,8 @@ import React from 'react'
 
 const GradientButton = ({ 
   children, 
-  width = 'w-[118px]', 
-  height = 'h-[42px]', 
+  width = 'w-[100px] md:w-[118px]', 
+  height = 'h-[38px] md:h-[42px]', 
   rounded = 'rounded-[40px]',
   textColor = 'text-[#000000]',
   onClick 
