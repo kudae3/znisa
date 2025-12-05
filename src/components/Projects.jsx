@@ -5,17 +5,17 @@ const projectsData = [
   {
     id: 1,
     name: 'Project Name',
-    icon: '/src/assets/1.png'
+    icon: '/1.png'
   },
   {
     id: 2,
     name: 'Project Name',
-    icon: '/src/assets/2.png'
+    icon: '/2.png'
   },
   {
     id: 3,
     name: 'Project Name',
-    icon: '/src/assets/3.png'
+    icon: '/3.png'
   }
 ]
 

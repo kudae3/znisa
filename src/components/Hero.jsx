@@ -1,5 +1,5 @@
 import GradientButton from '../assets/ui/GradientBtn'
-import backgroundImage from '../assets/background.png'
+import backgroundImage from '/background.png'
 
 const Hero = () => {
   return (

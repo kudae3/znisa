@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
         
         <div className='hidden md:flex shrink-0 w-[392px] h-[392px]'>
-            <img className='' src="/src/assets/image.png" alt="" />
+            <img className='' src="/image.png" alt="" />
         </div>
     </div>
   )

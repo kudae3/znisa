@@ -11,7 +11,7 @@ const Footer = () => {
       
       {/* Logo */}
       <div className='w-[117px] h-11 flex items-center gap-3'>
-        <img className='w-11 h-11' src="/src/assets/logo.png" alt="" />
+        <img className='w-11 h-11' src="/logo.png" alt="" />
         <h1 className='font-normal text-[24px] leading-[100%] text-white'>znisa</h1>
       </div>
       
