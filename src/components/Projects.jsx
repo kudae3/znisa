@@ -21,7 +21,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className='text-white flex flex-col gap-10 mt-15'>
+    <div className='text-white flex flex-col gap-10 mt-20'>
         <div className='flex gap-[29px] items-center pb-10'>
             <h2 className='font-normal text-[40px] leading-14'>Some Featured projects</h2>
             <Twinkle/>
