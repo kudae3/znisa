@@ -17,6 +17,14 @@ const Navbar = () => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'projects', 'contact']
       const scrollPosition = window.scrollY + 100
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight
+
+      // Check if user is near bottom of page
+      if (windowHeight + window.scrollY >= documentHeight - 50) {
+        setActiveSection('contact')
+        return
+      }
 
       for (const section of sections) {
         const element = document.getElementById(section)
