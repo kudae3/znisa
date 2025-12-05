@@ -1,12 +1,20 @@
+import Banner from "./components/Banner"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
-    <div className="container flex flex-col gap-10">
-      <Navbar/>
-      <Hero/>
+    <div className="flex flex-col gap-10 my-10">
+      <div className="container">
+        <Navbar/>
+      </div>
+      <div>
+        <div className="container">
+          <Hero />
+        </div>
+        <Banner/>
+      </div>
     </div>
   )
 }
