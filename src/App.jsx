@@ -2,6 +2,7 @@ import Banner from "./components/Banner"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Process from "./components/Process"
+import Projects from "./components/Projects"
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div className="container">
         <Process/>
+      </div>
+      <div className="container">
+        <Projects/>
       </div>
     </div>
   )
