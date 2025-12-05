@@ -16,7 +16,7 @@ function App() {
       </div>
       <div>
         <div className="container">
-          <Hero />
+          {/* <Hero /> */}
         </div>
         <Banner/>
       </div>
@@ -27,13 +27,13 @@ function App() {
         <Projects/>
       </div>
       <div className="container">
-        <Testimonials/>
+        {/* <Testimonials/> */}
       </div>
       <div className="container">
         <Contact/>
       </div>
       <div className="container">
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   )

@@ -37,7 +37,7 @@ const Testimonials = () => {
             <Twinkle/>
         </div>
 
-        <div className='grid grid-cols-2 gap-10 w-[850px]'>
+        <div className='grid md:grid-cols-2 gap-10 w-full max-w-[850px]'>
           {testimonialData.map((testimonial) => (
             <div key={testimonial.id} className='relative w-[397px] h-[201px] rounded-3xl p-[1.5px]' style={{
               backgroundImage: 'linear-gradient(305.8deg, rgba(125, 122, 251, 0) 56.27%, #FFD49C 90.38%)'
