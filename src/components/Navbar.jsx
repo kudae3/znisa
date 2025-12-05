@@ -1,16 +1,44 @@
+import { useState, useEffect } from 'react'
 import Home from '../assets/icons/Home'
 import People from '../assets/icons/People'
 import GradientButton from '../assets/ui/GradientBtn'
 
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState('home')
+
   const navItems = [
-    { id: 1, label: 'Home', icon: <Home/>, isActive: true, href: '#home' },
-    { id: 2, label: 'About', icon: null, isActive: false, href: '#about' },
-    { id: 3, label: 'Projects', icon: null, isActive: false, href: '#projects' },
-    { id: 4, label: 'Contact me', icon: null, isActive: false, href: '#contact' }
+    { id: 1, label: 'Home', icon: <Home/>, href: '#home', section: 'home' },
+    { id: 2, label: 'About', icon: null, href: '#about', section: 'about' },
+    { id: 3, label: 'Projects', icon: null, href: '#projects', section: 'projects' },
+    { id: 4, label: 'Contact me', icon: null, href: '#contact', section: 'contact' }
   ]
 
-  const handleScroll = (e, href) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'projects', 'contact']
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const offsetTop = element.offsetTop
+          const offsetBottom = offsetTop + element.offsetHeight
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Call once on mount
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const handleScrollClick = (e, href) => {
     e.preventDefault()
     const element = document.querySelector(href)
     if (element) {
@@ -28,14 +56,14 @@ const Navbar = () => {
       </div>
       
       {/* Routes Buttons */}
-      <div className='gradient-border-wrapper w-full max-w-[418px] h-12 rounded-[290px] mx-auto md:mx-0'>
-        <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-5 py-1.5 pl-1.5 pr-1.5 lg:pr-8 text-white'>
+      <div className='gradient-border-wrapper w-[80%] md:max-w-[418px] h-12 rounded-[290px] mx-auto md:mx-0 fixed top-18 md:top-10 left-1/2 -translate-x-1/2 z-50'>
+        <div className='w-full h-full bg-[#1C1C1C] rounded-[290px] flex justify-between items-center gap-2 md:gap-5 py-1.5 pl-1.5 pr-1.5 lg:pr-8 text-white'>
           {navItems.map((item) => (
             <a
               key={item.id}
               href={item.href}
-              onClick={(e) => handleScroll(e, item.href)}
-              className={`${item.icon ? 'w-[52px]' : 'px-3'} h-9 rounded-[40px] flex justify-center items-center ${item.isActive ? 'bg-[#292929]' : ''} ${item.label === 'Contact me' ? 'whitespace-nowrap' : ''} cursor-pointer hover:bg-[#292929] transition-colors`}
+              onClick={(e) => handleScrollClick(e, item.href)}
+              className={`${item.icon ? 'w-[52px]' : 'px-2 md:px-3'} h-9 rounded-[40px] flex justify-center items-center ${activeSection === item.section ? 'bg-[#292929]' : ''} ${item.label === 'Contact me' ? 'whitespace-nowrap' : ''} cursor-pointer hover:bg-[#292929] transition-colors`}
             >
               {item.icon ? item.icon : <p className='font-normal text-[10px] md:text-[16px] leading-[100%]'>{item.label}</p>}
             </a>

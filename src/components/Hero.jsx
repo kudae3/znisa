@@ -3,7 +3,7 @@ import backgroundImage from '../assets/background.png'
 
 const Hero = () => {
   return (
-    <div className='text-white h-[300px] lg:h-[567px] relative bg-cover bg-center bg-no-repeat' style={{
+    <div className='text-white h-[300px] lg:h-[567px] relative bg-cover bg-center bg-no-repeat mt-10' style={{
       backgroundImage: `url(${backgroundImage})`
     }}>
         <div className='text-center mx-auto w-full max-w-[882px] h-[166px] flex flex-col gap-[11px] lg:px-[175px] pt-5 lg:pt-[117px]'>
