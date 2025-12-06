@@ -1,5 +1,6 @@
 import React from 'react'
 import Twinkle from '../assets/icons/Twinkle'
+import AnimatedContent from './AnimatedContent'
 
 const projectsData = [
   {
@@ -29,7 +30,7 @@ const Projects = () => {
 
         <div className='flex flex-col gap-10'>
           {projectsData.map((project) => (
-            <div key={project.id} className='py-5 md:py-[30px] lg:py-[55px] px-5 flex gap-5 lg:gap-0 lg:justify-around items-center bg-[#151515]'>
+            <AnimatedContent key={project.id} className='py-5 md:py-[30px] lg:py-[55px] px-5 flex gap-5 lg:gap-0 lg:justify-around items-center bg-[#151515]'>
                 <div className='w-[120px] h-[120px] md:w-[200px] md:h-[200px] lg:w-[545px] lg:h-[545px] gradient-bg'></div>
                 <div className='flex flex-col gap-5'>
                     <div className='w-[30px] h-[30px] md:w-[53px] md:h-[53px]'>
@@ -37,7 +38,7 @@ const Projects = () => {
                     </div>
                     <h2 className='font-bold text-[18px] md:text-[24px] lg:text-[36px] leading-[18px] md:leading-[22px]'>{project.name}</h2>
                 </div>
-            </div>
+            </AnimatedContent>
           ))}
         </div>
 

@@ -3,6 +3,7 @@ import Twinkle from '../assets/icons/Twinkle'
 import RightOpen from '../assets/icons/RightOpen'
 import DownOpen from '../assets/icons/DownOpen'
 import LeftOpen from '../assets/icons/LeftOpen'
+import AnimatedContent from './AnimatedContent'
 
 const Process = () => {
   const processSteps = [
@@ -38,7 +39,7 @@ const Process = () => {
         <div className='w-full max-w-[735px]'>
             <ol className="relative space-y-16">
                 {processSteps.map((step, index) => (
-                  <li key={step.id} className="relative flex items-start gap-10 md:gap-15">
+                  <AnimatedContent key={step.id} className="relative flex items-start gap-10 md:gap-15">
                     
                     <div className='w-10 h-10 md:w-14 md:h-14 rounded-full shrink-0 border border-white flex justify-center items-center text-white'>
                         {step.id}
@@ -62,7 +63,7 @@ const Process = () => {
                           </div>
                         )}
                     </div>
-                  </li>
+                  </AnimatedContent>
                 ))}
             </ol>
         </div>

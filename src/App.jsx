@@ -1,3 +1,4 @@
+import AnimatedContent from "./components/AnimatedContent"
 import Banner from "./components/Banner"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
@@ -26,12 +27,12 @@ function App() {
       <div id="projects" className="container">
         <Projects/>
       </div>
-      <div className="container">
+      <AnimatedContent className="container">
         <Testimonials/>
-      </div>
-      <div id="contact" className="container">
+      </AnimatedContent>
+      <AnimatedContent id="contact" className="container">
         <Contact/>
-      </div>
+      </AnimatedContent>
       <div className="container">
         <Footer/>
       </div>
