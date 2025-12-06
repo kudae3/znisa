@@ -48,6 +48,13 @@ const Navbar = () => {
 
   const handleScrollClick = (e, href) => {
     e.preventDefault()
+
+    // Special case for home - scroll to top
+    if (href === '#home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
