@@ -45,10 +45,10 @@ const Testimonials = () => {
               <div className='w-full h-full backdrop-blur-[30px] bg-[#101111] rounded-3xl py-8 px-3 lg:px-6 flex flex-col gap-6'>
                 <div className='w-auto md:w-[349px] h-[50px] flex justify-between items-center'>
                     <div className='flex gap-3 items-center'>
-                      <div className='bg-[#878787] rounded-full w-12 h-12'></div>
+                      <div className='bg-[#878787] rounded-full w-10 h-10 md:w-12 md:h-12'></div>
                       <div>
-                        <h3 className='font-normal text-[16px] leading-7'>{testimonial.name}</h3>
-                        <p className='font-normal text-[12px] leading-[100%]'>{testimonial.role}</p>
+                        <h3 className='font-normal text-[12px] md:text-[16px] leading-7'>{testimonial.name}</h3>
+                        <p className='font-normal text-[10px] md:text-[12px] leading-[100%]'>{testimonial.role}</p>
                       </div>
                     </div>
                     <Quote/>
